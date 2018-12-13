@@ -1,0 +1,14 @@
+<html>
+<body>
+<p id="wow">
+</p>
+<script>
+cookie = document.cookie.split("=")[1].split("/");
+start_time = parseInt(cookie[1]);
+user_id = cookie[0];
+time = new Date()
+
+document.getElementById("wow").innerHTML = "Hello " + user_id + ", " + (30 + start_time - parseInt(time.getTime() / 1000)) + " seconds left until your cookie expires.";
+</script>
+<body>
+</html>
